@@ -15,11 +15,11 @@
             {
                 OptionsMenu();
                 string input = Console.ReadLine();
-                // we try parse the input as a int , if it doesn't transfer to an int or isn't between 1-4 we have an error
+                // we try parse the input as a int , if it doesn't transfer to an int or isn't between 1-5 we have an error
                 // int.TryParse(input,out int userInput) : if int is parsed we return using 'out' the int userInput
                 if (!int.TryParse(input, out int userInput) || userInput < 1 || userInput > 5)
                 {
-                    Console.WriteLine("You must input a number between 1-4");
+                    Console.WriteLine("You must input a number between 1-5");
                     OptionsMenu();
                 }
                 else
